@@ -1,7 +1,7 @@
 import React  from 'react';
 
 const Todos=({todo,deletetodo})=>{
-    const todoList=todo.length?( todo.map(todo=>{
+    const todoList=todo.length?(todo.map(todo=>{
         return(
         <div className="todos" key={todo.id}>
         <center>
