@@ -4,12 +4,22 @@ import Todos from "./todos";
 import Addtodo from './Addtodos';
 
 class App extends Component {
- state={
-   todos:[{id:1, content:'buy some milk'},
-         {id:2, content:'buy some bread'}
-        ]
+  constructor(props){
+    super(props);
+   this.state={
+      todos:[{id:1, content:'buy some milk'},
+            {id:2, content:'buy some bread'}
+           ]
+   
+    }
+    let value=localStorage.getItem("list");
+    value=JSON.parse(value);
+    console.log(value);
+    this.setState({
+      todos:value
+    })
+  }
 
- }
   addtodo=(todo)=>{
     todo.id=Math.random(); 
     let todos=[...this.state.todos,todo];
@@ -20,14 +30,7 @@ class App extends Component {
     })
    
   }
-componentDidMount(){
-  let value=localStorage.getItem("list");
-  value=JSON.parse(value);
-  console.log(value);
-  this.setState({
-    todos:value
-  })
-}
+
 
  deletetodo=(id)=>{
    const todos=this.state.todos.filter(todo=>{
