@@ -34,25 +34,3 @@ setValue({...value,val:'',id:''})
 export default App;
 
 
-// todo.id=Math.random(); 
-// let todos=[...this.state.todos,todo];
-// localStorage.setItem("list",JSON.stringify(todos));
-// this.setState({
-//    todos:todos
-  
-// })
-
-// let value=localStorage.getItem("list");
-// value=JSON.parse(value);
-// console.log(value);
-// this.setState({
-//   todos:value
-// })
-
-// const todos=this.state.todos.filter(todo=>{
-//   return todo.id!==id;
-// })
-// localStorage.setItem("list",JSON.stringify(todos));
-// this.setState({
-//   todos
-// })
