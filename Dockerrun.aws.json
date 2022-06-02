@@ -1,14 +1,14 @@
 {
-    "AWSEBDockerrunVersion": "1",
+  "AWSEBDockerrunVersion": "1",
 
-        "Image": {
-          "Name": "maheen299/frontend"
-        },
-        "Ports": [
-          {
-            "ContainerPort": 22,
-            "HostPort":22
-          }
-        ]
-      
-  }
+      "Image": {
+        "Name": "maheen299/frontend"
+      },
+      "Ports": [
+        {
+          "ContainerPort": 80,
+          "HostPort":80
+        }
+      ],
+      "Logging": "/var/log/nginx"
+}
