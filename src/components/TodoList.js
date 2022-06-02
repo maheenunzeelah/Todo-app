@@ -9,7 +9,7 @@ export const TodoList=({todos,deleteTodo})=>{
         </div>
     )
 })
-    ): (<center><div>No todo left</div></center>)
+    ): (<center><div>No todo left...</div></center>)
     return(
      <div >{todoList}</div>
     );
