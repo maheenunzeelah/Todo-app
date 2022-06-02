@@ -18,7 +18,7 @@ export const Todo=({todos,add,deleteTodo,value,setValue})=>{
          <form  style={{fontFamily:"Segoe UI"}} className="form-inline d-flex justify-content-center mb-5" onSubmit={(e)=>addtodo(e)}>
            <div className="form-group mx-sm-3  " >
              <input type="text" className="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-             placeholder="Add New todo" value={value.val}
+             placeholder="Add New todo...." value={value.val}
              onChange={(e)=>onChange(e)}
             />
         
